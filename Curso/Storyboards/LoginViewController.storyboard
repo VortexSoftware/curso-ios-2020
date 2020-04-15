@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="D6G-JG-SZt">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="NTB-cT-DW5" customClass="LoginViewController" customModule="Curso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8fr-kD-bQp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="s8m-5h-IlP">
+                                <rect key="frame" x="0.0" y="414" width="414" height="448"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s8m-5h-IlP" secondAttribute="height" multiplier="376:407" id="Pqh-VT-KvB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_vortex" translatesAutoresizingMaskIntoConstraints="NO" id="uFd-gf-1nH">
+                                <rect key="frame" x="14" y="109" width="386" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xbS-pC-KhB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GESTIÓN DE GASTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akf-sc-9sW">
+                                <rect key="frame" x="14" y="244" width="386" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7P-Xj-v27">
+                                <rect key="frame" x="38" y="331" width="338" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="R67-IP-rsV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75t-1A-srD">
+                                <rect key="frame" x="38" y="404" width="338" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zxl-w5-O8Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgD-Tr-zOz">
+                                <rect key="frame" x="99.5" y="496" width="215" height="44"/>
+                                <color key="backgroundColor" name="accent"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="7vv-p0-TXn"/>
+                                    <constraint firstAttribute="height" constant="44" id="y1y-iC-zGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Iniciar Sesión">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped" destination="NTB-cT-DW5" eventType="touchUpInside" id="eI9-gC-8Ye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="akf-sc-9sW" firstAttribute="leading" secondItem="yud-eG-5jr" secondAttribute="leading" constant="14" id="06C-gQ-WDC"/>
+                            <constraint firstItem="akf-sc-9sW" firstAttribute="top" secondItem="uFd-gf-1nH" secondAttribute="bottom" constant="35" id="2Ws-Cm-IfG"/>
+                            <constraint firstItem="d7P-Xj-v27" firstAttribute="leading" secondItem="yud-eG-5jr" secondAttribute="leading" constant="38" id="3wl-Zq-G7G"/>
+                            <constraint firstItem="75t-1A-srD" firstAttribute="top" secondItem="d7P-Xj-v27" secondAttribute="bottom" constant="29" id="4cp-Dl-3in"/>
+                            <constraint firstItem="yud-eG-5jr" firstAttribute="trailing" secondItem="s8m-5h-IlP" secondAttribute="trailing" id="Ac3-Dd-NMP"/>
+                            <constraint firstItem="yud-eG-5jr" firstAttribute="trailing" secondItem="d7P-Xj-v27" secondAttribute="trailing" constant="38" id="Cgn-Mb-7M5"/>
+                            <constraint firstItem="uFd-gf-1nH" firstAttribute="leading" secondItem="yud-eG-5jr" secondAttribute="leading" constant="14" id="GQl-Su-SZ5"/>
+                            <constraint firstItem="d7P-Xj-v27" firstAttribute="top" secondItem="akf-sc-9sW" secondAttribute="bottom" constant="58" id="I2Q-Bm-1t0"/>
+                            <constraint firstItem="yud-eG-5jr" firstAttribute="trailing" secondItem="75t-1A-srD" secondAttribute="trailing" constant="38" id="Izk-RV-3fB"/>
+                            <constraint firstItem="75t-1A-srD" firstAttribute="leading" secondItem="yud-eG-5jr" secondAttribute="leading" constant="38" id="LYd-Sb-zbR"/>
+                            <constraint firstItem="s8m-5h-IlP" firstAttribute="leading" secondItem="yud-eG-5jr" secondAttribute="leading" id="Oho-a3-LhL"/>
+                            <constraint firstItem="yud-eG-5jr" firstAttribute="bottom" secondItem="s8m-5h-IlP" secondAttribute="bottom" id="TAO-5v-w9I"/>
+                            <constraint firstItem="uFd-gf-1nH" firstAttribute="top" secondItem="yud-eG-5jr" secondAttribute="top" constant="65" id="b1R-xd-Gfz"/>
+                            <constraint firstItem="WgD-Tr-zOz" firstAttribute="centerX" secondItem="yud-eG-5jr" secondAttribute="centerX" id="pHn-ME-RJg"/>
+                            <constraint firstItem="yud-eG-5jr" firstAttribute="trailing" secondItem="akf-sc-9sW" secondAttribute="trailing" constant="14" id="pq4-61-jIA"/>
+                            <constraint firstItem="yud-eG-5jr" firstAttribute="trailing" secondItem="uFd-gf-1nH" secondAttribute="trailing" constant="14" id="qjx-0W-h1w"/>
+                            <constraint firstItem="WgD-Tr-zOz" firstAttribute="top" secondItem="75t-1A-srD" secondAttribute="bottom" constant="48" id="rsJ-lt-vlk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yud-eG-5jr"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="WgD-Tr-zOz" id="2qh-8J-6M8"/>
+                        <outlet property="passwordTextField" destination="75t-1A-srD" id="R2A-lI-a48"/>
+                        <outlet property="usernameTextField" destination="d7P-Xj-v27" id="8tS-jW-B5T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORa-7X-Ig6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_background" width="376" height="406.5"/>
+        <image name="logo_vortex" width="347.5" height="100"/>
+        <namedColor name="accent">
+            <color red="0.11372549019607843" green="0.78431372549019607" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
