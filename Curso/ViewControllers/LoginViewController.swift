@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
     @IBOutlet private var passwordTextField: UITextField?
     @IBOutlet private var button: UIButton?
     
+    let repository = AuthRepository()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         button?.layer.cornerRadius = 8
@@ -24,6 +26,11 @@ class LoginViewController: UIViewController {
         if let username = usernameTextField?.text, let password = passwordTextField?.text {
             print(username)
             print(password)
+            
+            repository.login(username: username, password: password, completion: { user in
+                print(user?.name)
+                print(user?.token)
+            })
         }
     }
 }

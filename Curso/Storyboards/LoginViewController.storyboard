@@ -103,7 +103,7 @@
         <image name="login_background" width="376" height="406.5"/>
         <image name="logo_vortex" width="347.5" height="100"/>
         <namedColor name="accent">
-            <color red="0.11372549019607843" green="0.78431372549019607" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11400000005960464" green="0.7839999794960022" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
