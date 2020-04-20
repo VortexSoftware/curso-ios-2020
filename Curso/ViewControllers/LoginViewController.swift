@@ -9,13 +9,17 @@
 import Foundation
 import UIKit
 
+protocol LoginPresenterProtocol: class {
+    func login(username: String, password: String)
+}
+
 class LoginViewController: UIViewController {
     
     @IBOutlet private var usernameTextField: UITextField?
     @IBOutlet private var passwordTextField: UITextField?
     @IBOutlet private var button: UIButton?
     
-    let repository = AuthRepository()
+    var presenter: LoginPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +28,18 @@ class LoginViewController: UIViewController {
     
     @IBAction private func buttonTapped() {
         if let username = usernameTextField?.text, let password = passwordTextField?.text {
-            print(username)
-            print(password)
-            
-            repository.login(username: username, password: password, completion: { user in
-                print(user?.name)
-                print(user?.token)
-            })
+            presenter?.login(username: username, password: password)
         }
+    }
+}
+
+extension LoginViewController: LoginViewProtocol {
+    
+    func show(error: String) {
+        
+    }
+    
+    func showLoginSuccess() {
+        
     }
 }

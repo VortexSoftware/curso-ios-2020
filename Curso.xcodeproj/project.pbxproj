@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6168B3244DC77B00A6D740 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B2244DC77B00A6D740 /* Test.swift */; };
+		3D6168B6244DD7E000A6D740 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */; };
+		3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B8244DD92300A6D740 /* LoginWireframe.swift */; };
 		3DA00E0B24473A40002DFE41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA00E0A24473A40002DFE41 /* LoginViewController.swift */; };
 		3DA00E0D24473A6C002DFE41 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA00E0C24473A6C002DFE41 /* LoginViewController.storyboard */; };
 		3DA3666224449108008BB499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3666124449108008BB499 /* AppDelegate.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		1C177602536B6BD1F9FE868E /* Pods-Curso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curso.debug.xcconfig"; path = "Target Support Files/Pods-Curso/Pods-Curso.debug.xcconfig"; sourceTree = "<group>"; };
+		3D6168B2244DC77B00A6D740 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		3D6168B8244DD92300A6D740 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		3DA00E0A24473A40002DFE41 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DA00E0C24473A6C002DFE41 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		3DA3665E24449108008BB499 /* Curso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curso.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +80,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3D6168B4244DD7D500A6D740 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3D6168B7244DD91300A6D740 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				3D6168B8244DD92300A6D740 /* LoginWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		3DA00E0824473A01002DFE41 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +133,8 @@
 		3DA3666024449108008BB499 /* Curso */ = {
 			isa = PBXGroup;
 			children = (
+				3D6168B7244DD91300A6D740 /* Wireframe */,
+				3D6168B4244DD7D500A6D740 /* Presenters */,
 				3DEBB1EF2449E265007FDD0F /* Models */,
 				3DEBB1EC2449DFD7007FDD0F /* Repositories */,
 				3DEBB1DC2449DBA0007FDD0F /* Network */,
@@ -123,6 +147,7 @@
 				3DA3666A2444910A008BB499 /* Assets.xcassets */,
 				3DA3666C2444910A008BB499 /* LaunchScreen.storyboard */,
 				3DA3666F2444910A008BB499 /* Info.plist */,
+				3D6168B2244DC77B00A6D740 /* Test.swift */,
 			);
 			path = Curso;
 			sourceTree = "<group>";
@@ -291,11 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6168B6244DD7E000A6D740 /* LoginPresenter.swift in Sources */,
 				3DEBB1F12449E26E007FDD0F /* User.swift in Sources */,
 				3DA00E0B24473A40002DFE41 /* LoginViewController.swift in Sources */,
+				3D6168B3244DC77B00A6D740 /* Test.swift in Sources */,
 				3DEBB1DF2449DBB5007FDD0F /* HttpRequestBuilder.swift in Sources */,
 				3DEBB1E52449DC46007FDD0F /* BaseRepository.swift in Sources */,
 				3DA3666624449108008BB499 /* ViewController.swift in Sources */,
+				3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */,
 				3DEBB1E12449DBF8007FDD0F /* HttpManager.swift in Sources */,
 				3DEBB1F32449E3AD007FDD0F /* LoginResponse.swift in Sources */,
 				3DA3666224449108008BB499 /* AppDelegate.swift in Sources */,

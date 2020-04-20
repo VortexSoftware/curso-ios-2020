@@ -18,11 +18,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let storyboard = UIStoryboard(name: "LoginViewController", bundle: .main)
-        let loginVC = storyboard.instantiateViewController(identifier: "LoginViewController")
-        
-        navigationController?.pushViewController(loginVC, animated: true)
+        LoginWireframe.navigateToLogin(from: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
