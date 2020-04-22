@@ -15,7 +15,7 @@ protocol LoginViewProtocol: class {
 
 class LoginPresenter {
     
-    var view: LoginViewProtocol?
+    weak var view: LoginViewProtocol?
     
     let repository = AuthRepository()
     
@@ -27,8 +27,13 @@ class LoginPresenter {
 extension LoginPresenter: LoginPresenterProtocol {
     
     func login(username: String, password: String) {
-        repository.login(username: username, password: password) { (user) in
-            
+        repository.login(username: username, password: password) { (user, error) in
+            if let user = user {
+                SessionHelper().save(user: user)
+                self.view?.showLoginSuccess()
+            } else {
+                self.view?.show(error: error ?? "Ocurrió un error")
+            }
         }
     }
 }

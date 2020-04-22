@@ -10,8 +10,14 @@
 		3D6168B3244DC77B00A6D740 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B2244DC77B00A6D740 /* Test.swift */; };
 		3D6168B6244DD7E000A6D740 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */; };
 		3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B8244DD92300A6D740 /* LoginWireframe.swift */; };
+		3D66345C245071BA00C2A966 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66345B245071BA00C2A966 /* NewExpenseViewController.swift */; };
+		3D66345E245071D500C2A966 /* NewExpenseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D66345D245071D500C2A966 /* NewExpenseViewController.storyboard */; };
+		3D6634602450724400C2A966 /* NewExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66345F2450724400C2A966 /* NewExpensePresenter.swift */; };
+		3D6634622450730D00C2A966 /* ExpensesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6634612450730D00C2A966 /* ExpensesWireframe.swift */; };
 		3DA00E0B24473A40002DFE41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA00E0A24473A40002DFE41 /* LoginViewController.swift */; };
 		3DA00E0D24473A6C002DFE41 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA00E0C24473A6C002DFE41 /* LoginViewController.storyboard */; };
+		3DA0473B24506D3F00789614 /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0473A24506D3F00789614 /* SessionHelper.swift */; };
+		3DA0473D24506FBE00789614 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0473C24506FBE00789614 /* MainWireframe.swift */; };
 		3DA3666224449108008BB499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3666124449108008BB499 /* AppDelegate.swift */; };
 		3DA3666424449108008BB499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3666324449108008BB499 /* SceneDelegate.swift */; };
 		3DA3666624449108008BB499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3666524449108008BB499 /* ViewController.swift */; };
@@ -36,8 +42,14 @@
 		3D6168B2244DC77B00A6D740 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		3D6168B8244DD92300A6D740 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		3D66345B245071BA00C2A966 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
+		3D66345D245071D500C2A966 /* NewExpenseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewExpenseViewController.storyboard; sourceTree = "<group>"; };
+		3D66345F2450724400C2A966 /* NewExpensePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpensePresenter.swift; sourceTree = "<group>"; };
+		3D6634612450730D00C2A966 /* ExpensesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesWireframe.swift; sourceTree = "<group>"; };
 		3DA00E0A24473A40002DFE41 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DA00E0C24473A6C002DFE41 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		3DA0473A24506D3F00789614 /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
+		3DA0473C24506FBE00789614 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		3DA3665E24449108008BB499 /* Curso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA3666124449108008BB499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA3666324449108008BB499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */,
+				3D66345F2450724400C2A966 /* NewExpensePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -92,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				3D6168B8244DD92300A6D740 /* LoginWireframe.swift */,
+				3DA0473C24506FBE00789614 /* MainWireframe.swift */,
+				3D6634612450730D00C2A966 /* ExpensesWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -100,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				3DA00E0C24473A6C002DFE41 /* LoginViewController.storyboard */,
+				3D66345D245071D500C2A966 /* NewExpenseViewController.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -107,9 +123,19 @@
 		3DA00E0924473A0F002DFE41 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DA3666524449108008BB499 /* ViewController.swift */,
 				3DA00E0A24473A40002DFE41 /* LoginViewController.swift */,
+				3D66345B245071BA00C2A966 /* NewExpenseViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3DA0473924506D3200789614 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DA0473A24506D3F00789614 /* SessionHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3DA3665524449108008BB499 = {
@@ -133,6 +159,7 @@
 		3DA3666024449108008BB499 /* Curso */ = {
 			isa = PBXGroup;
 			children = (
+				3DA0473924506D3200789614 /* Helpers */,
 				3D6168B7244DD91300A6D740 /* Wireframe */,
 				3D6168B4244DD7D500A6D740 /* Presenters */,
 				3DEBB1EF2449E265007FDD0F /* Models */,
@@ -142,7 +169,6 @@
 				3DA00E0824473A01002DFE41 /* Storyboards */,
 				3DA3666124449108008BB499 /* AppDelegate.swift */,
 				3DA3666324449108008BB499 /* SceneDelegate.swift */,
-				3DA3666524449108008BB499 /* ViewController.swift */,
 				3DA3666724449108008BB499 /* Main.storyboard */,
 				3DA3666A2444910A008BB499 /* Assets.xcassets */,
 				3DA3666C2444910A008BB499 /* LaunchScreen.storyboard */,
@@ -262,6 +288,7 @@
 			files = (
 				3DA3666E2444910A008BB499 /* LaunchScreen.storyboard in Resources */,
 				3DA00E0D24473A6C002DFE41 /* LoginViewController.storyboard in Resources */,
+				3D66345E245071D500C2A966 /* NewExpenseViewController.storyboard in Resources */,
 				3DA3666B2444910A008BB499 /* Assets.xcassets in Resources */,
 				3DA3666924449108008BB499 /* Main.storyboard in Resources */,
 			);
@@ -322,16 +349,21 @@
 				3D6168B3244DC77B00A6D740 /* Test.swift in Sources */,
 				3DEBB1DF2449DBB5007FDD0F /* HttpRequestBuilder.swift in Sources */,
 				3DEBB1E52449DC46007FDD0F /* BaseRepository.swift in Sources */,
+				3D6634602450724400C2A966 /* NewExpensePresenter.swift in Sources */,
 				3DA3666624449108008BB499 /* ViewController.swift in Sources */,
 				3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */,
 				3DEBB1E12449DBF8007FDD0F /* HttpManager.swift in Sources */,
 				3DEBB1F32449E3AD007FDD0F /* LoginResponse.swift in Sources */,
+				3D6634622450730D00C2A966 /* ExpensesWireframe.swift in Sources */,
+				3DA0473B24506D3F00789614 /* SessionHelper.swift in Sources */,
 				3DA3666224449108008BB499 /* AppDelegate.swift in Sources */,
 				3DEBB1EB2449DF1F007FDD0F /* ApiUrls.swift in Sources */,
 				3DA3666424449108008BB499 /* SceneDelegate.swift in Sources */,
+				3DA0473D24506FBE00789614 /* MainWireframe.swift in Sources */,
 				3DEBB1E32449DC17007FDD0F /* NetworkRequestManager.swift in Sources */,
 				3DEBB1EE2449DFE2007FDD0F /* AuthRepository.swift in Sources */,
 				3DEBB1E92449DD16007FDD0F /* ApiRequestBuilder.swift in Sources */,
+				3D66345C245071BA00C2A966 /* NewExpenseViewController.swift in Sources */,
 				3DEBB1E72449DC65007FDD0F /* ErrorReponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

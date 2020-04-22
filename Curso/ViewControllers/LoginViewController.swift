@@ -36,10 +36,12 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewProtocol {
     
     func show(error: String) {
-        
+        let alert = UIAlertController(title: "", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     func showLoginSuccess() {
-        
+        print("showLoginSuccess")
     }
 }
