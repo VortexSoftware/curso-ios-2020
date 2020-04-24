@@ -33,6 +33,12 @@
 		3DA3666924449108008BB499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3666724449108008BB499 /* Main.storyboard */; };
 		3DA3666B2444910A008BB499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3666A2444910A008BB499 /* Assets.xcassets */; };
 		3DA3666E2444910A008BB499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3666C2444910A008BB499 /* LaunchScreen.storyboard */; };
+		3DC1AB96245375FA005A3FDC /* ProvidersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AB95245375FA005A3FDC /* ProvidersRepository.swift */; };
+		3DC1AB9824537609005A3FDC /* CategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AB9724537608005A3FDC /* CategoriesRepository.swift */; };
+		3DC1AB9A24537659005A3FDC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AB9924537659005A3FDC /* Category.swift */; };
+		3DC1AB9C24537667005A3FDC /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AB9B24537667005A3FDC /* Provider.swift */; };
+		3DC1AB9E245376E2005A3FDC /* CategorySelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AB9D245376E2005A3FDC /* CategorySelectorPresenter.swift */; };
+		3DC1ABA0245376EC005A3FDC /* ProviderSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AB9F245376EC005A3FDC /* ProviderSelectorPresenter.swift */; };
 		3DEBB1DF2449DBB5007FDD0F /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBB1DE2449DBB5007FDD0F /* HttpRequestBuilder.swift */; };
 		3DEBB1E12449DBF8007FDD0F /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBB1E02449DBF8007FDD0F /* HttpManager.swift */; };
 		3DEBB1E32449DC17007FDD0F /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBB1E22449DC17007FDD0F /* NetworkRequestManager.swift */; };
@@ -76,6 +82,12 @@
 		3DA3666A2444910A008BB499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA3666D2444910A008BB499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA3666F2444910A008BB499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC1AB95245375FA005A3FDC /* ProvidersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersRepository.swift; sourceTree = "<group>"; };
+		3DC1AB9724537608005A3FDC /* CategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepository.swift; sourceTree = "<group>"; };
+		3DC1AB9924537659005A3FDC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3DC1AB9B24537667005A3FDC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		3DC1AB9D245376E2005A3FDC /* CategorySelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectorPresenter.swift; sourceTree = "<group>"; };
+		3DC1AB9F245376EC005A3FDC /* ProviderSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderSelectorPresenter.swift; sourceTree = "<group>"; };
 		3DEBB1DE2449DBB5007FDD0F /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
 		3DEBB1E02449DBF8007FDD0F /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		3DEBB1E22449DC17007FDD0F /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
@@ -125,6 +137,8 @@
 				3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */,
 				3D66345F2450724400C2A966 /* NewExpensePresenter.swift */,
 				3D42621D24531CD600015D57 /* AccountSelectorPresenter.swift */,
+				3DC1AB9D245376E2005A3FDC /* CategorySelectorPresenter.swift */,
+				3DC1AB9F245376EC005A3FDC /* ProviderSelectorPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -238,6 +252,8 @@
 			children = (
 				3DEBB1ED2449DFE2007FDD0F /* AuthRepository.swift */,
 				3D42621B24531B4200015D57 /* AccountsRepository.swift */,
+				3DC1AB95245375FA005A3FDC /* ProvidersRepository.swift */,
+				3DC1AB9724537608005A3FDC /* CategoriesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -248,6 +264,8 @@
 				3DEBB1F02449E26E007FDD0F /* User.swift */,
 				3D42621724531A2E00015D57 /* Account.swift */,
 				3D42621924531A9300015D57 /* Currency.swift */,
+				3DC1AB9924537659005A3FDC /* Category.swift */,
+				3DC1AB9B24537667005A3FDC /* Provider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -387,9 +405,14 @@
 				3DA00E0B24473A40002DFE41 /* LoginViewController.swift in Sources */,
 				3D6168B3244DC77B00A6D740 /* Test.swift in Sources */,
 				3DEBB1DF2449DBB5007FDD0F /* HttpRequestBuilder.swift in Sources */,
+				3DC1AB9C24537667005A3FDC /* Provider.swift in Sources */,
+				3DC1AB9A24537659005A3FDC /* Category.swift in Sources */,
 				3DEBB1E52449DC46007FDD0F /* BaseRepository.swift in Sources */,
 				3D6634602450724400C2A966 /* NewExpensePresenter.swift in Sources */,
+				3DC1AB9E245376E2005A3FDC /* CategorySelectorPresenter.swift in Sources */,
+				3DC1AB9824537609005A3FDC /* CategoriesRepository.swift in Sources */,
 				3D42621A24531A9300015D57 /* Currency.swift in Sources */,
+				3DC1ABA0245376EC005A3FDC /* ProviderSelectorPresenter.swift in Sources */,
 				3DA3666624449108008BB499 /* ViewController.swift in Sources */,
 				3D42621C24531B4200015D57 /* AccountsRepository.swift in Sources */,
 				3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */,
@@ -398,6 +421,7 @@
 				3DEBB1F32449E3AD007FDD0F /* LoginResponse.swift in Sources */,
 				3D6634622450730D00C2A966 /* ExpensesWireframe.swift in Sources */,
 				3D42621124530E5100015D57 /* SelectorWireframe.swift in Sources */,
+				3DC1AB96245375FA005A3FDC /* ProvidersRepository.swift in Sources */,
 				3DA0473B24506D3F00789614 /* SessionHelper.swift in Sources */,
 				3DA3666224449108008BB499 /* AppDelegate.swift in Sources */,
 				3DEBB1EB2449DF1F007FDD0F /* ApiUrls.swift in Sources */,

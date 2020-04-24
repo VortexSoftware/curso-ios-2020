@@ -73,3 +73,27 @@ extension SelectorViewController: AccountSelectorViewProtocol {
         tableView?.reloadData()
     }
 }
+
+extension SelectorViewController: CategorySelectorViewProtocol {
+    
+    func show(categories: [Category]) {
+        let names = categories.map { (category) -> String in
+            return (category.name ?? "")
+        }
+        
+        elements = names
+        tableView?.reloadData()
+    }
+}
+
+extension SelectorViewController: ProviderSelectorViewProtocol {
+    
+    func show(providers: [Provider]) {
+        let names = providers.map { (provider) -> String in
+            return (provider.name ?? "")
+        }
+        
+        elements = names
+        tableView?.reloadData()
+    }
+}
