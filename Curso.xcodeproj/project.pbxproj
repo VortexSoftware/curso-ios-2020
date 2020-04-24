@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D42620D24530DFF00015D57 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42620C24530DFF00015D57 /* SelectorViewController.swift */; };
+		3D42620F24530E2200015D57 /* SelectorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42620E24530E2200015D57 /* SelectorViewController.storyboard */; };
+		3D42621124530E5100015D57 /* SelectorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42621024530E5100015D57 /* SelectorWireframe.swift */; };
+		3D4262142453119100015D57 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4262132453119100015D57 /* SelectorTableViewCell.swift */; };
+		3D426216245311CE00015D57 /* SelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D426215245311CE00015D57 /* SelectorTableViewCell.xib */; };
+		3D42621824531A2E00015D57 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42621724531A2E00015D57 /* Account.swift */; };
+		3D42621A24531A9300015D57 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42621924531A9300015D57 /* Currency.swift */; };
+		3D42621C24531B4200015D57 /* AccountsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42621B24531B4200015D57 /* AccountsRepository.swift */; };
+		3D42621E24531CD600015D57 /* AccountSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42621D24531CD600015D57 /* AccountSelectorPresenter.swift */; };
 		3D6168B3244DC77B00A6D740 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B2244DC77B00A6D740 /* Test.swift */; };
 		3D6168B6244DD7E000A6D740 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */; };
 		3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6168B8244DD92300A6D740 /* LoginWireframe.swift */; };
@@ -39,6 +48,15 @@
 
 /* Begin PBXFileReference section */
 		1C177602536B6BD1F9FE868E /* Pods-Curso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curso.debug.xcconfig"; path = "Target Support Files/Pods-Curso/Pods-Curso.debug.xcconfig"; sourceTree = "<group>"; };
+		3D42620C24530DFF00015D57 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
+		3D42620E24530E2200015D57 /* SelectorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectorViewController.storyboard; sourceTree = "<group>"; };
+		3D42621024530E5100015D57 /* SelectorWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorWireframe.swift; sourceTree = "<group>"; };
+		3D4262132453119100015D57 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
+		3D426215245311CE00015D57 /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
+		3D42621724531A2E00015D57 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		3D42621924531A9300015D57 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		3D42621B24531B4200015D57 /* AccountsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRepository.swift; sourceTree = "<group>"; };
+		3D42621D24531CD600015D57 /* AccountSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectorPresenter.swift; sourceTree = "<group>"; };
 		3D6168B2244DC77B00A6D740 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		3D6168B8244DD92300A6D740 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
@@ -92,11 +110,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3D4262122453116D00015D57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D4262132453119100015D57 /* SelectorTableViewCell.swift */,
+				3D426215245311CE00015D57 /* SelectorTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3D6168B4244DD7D500A6D740 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				3D6168B5244DD7E000A6D740 /* LoginPresenter.swift */,
 				3D66345F2450724400C2A966 /* NewExpensePresenter.swift */,
+				3D42621D24531CD600015D57 /* AccountSelectorPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -107,6 +135,7 @@
 				3D6168B8244DD92300A6D740 /* LoginWireframe.swift */,
 				3DA0473C24506FBE00789614 /* MainWireframe.swift */,
 				3D6634612450730D00C2A966 /* ExpensesWireframe.swift */,
+				3D42621024530E5100015D57 /* SelectorWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -116,6 +145,7 @@
 			children = (
 				3DA00E0C24473A6C002DFE41 /* LoginViewController.storyboard */,
 				3D66345D245071D500C2A966 /* NewExpenseViewController.storyboard */,
+				3D42620E24530E2200015D57 /* SelectorViewController.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -126,6 +156,7 @@
 				3DA3666524449108008BB499 /* ViewController.swift */,
 				3DA00E0A24473A40002DFE41 /* LoginViewController.swift */,
 				3D66345B245071BA00C2A966 /* NewExpenseViewController.swift */,
+				3D42620C24530DFF00015D57 /* SelectorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -159,21 +190,22 @@
 		3DA3666024449108008BB499 /* Curso */ = {
 			isa = PBXGroup;
 			children = (
-				3DA0473924506D3200789614 /* Helpers */,
-				3D6168B7244DD91300A6D740 /* Wireframe */,
-				3D6168B4244DD7D500A6D740 /* Presenters */,
-				3DEBB1EF2449E265007FDD0F /* Models */,
-				3DEBB1EC2449DFD7007FDD0F /* Repositories */,
-				3DEBB1DC2449DBA0007FDD0F /* Network */,
-				3DA00E0924473A0F002DFE41 /* ViewControllers */,
-				3DA00E0824473A01002DFE41 /* Storyboards */,
 				3DA3666124449108008BB499 /* AppDelegate.swift */,
-				3DA3666324449108008BB499 /* SceneDelegate.swift */,
-				3DA3666724449108008BB499 /* Main.storyboard */,
 				3DA3666A2444910A008BB499 /* Assets.xcassets */,
-				3DA3666C2444910A008BB499 /* LaunchScreen.storyboard */,
+				3DA0473924506D3200789614 /* Helpers */,
 				3DA3666F2444910A008BB499 /* Info.plist */,
+				3DA3666C2444910A008BB499 /* LaunchScreen.storyboard */,
+				3DA3666724449108008BB499 /* Main.storyboard */,
+				3DEBB1EF2449E265007FDD0F /* Models */,
+				3DEBB1DC2449DBA0007FDD0F /* Network */,
+				3D6168B4244DD7D500A6D740 /* Presenters */,
+				3DEBB1EC2449DFD7007FDD0F /* Repositories */,
+				3DA3666324449108008BB499 /* SceneDelegate.swift */,
+				3DA00E0824473A01002DFE41 /* Storyboards */,
 				3D6168B2244DC77B00A6D740 /* Test.swift */,
+				3DA00E0924473A0F002DFE41 /* ViewControllers */,
+				3D4262122453116D00015D57 /* Views */,
+				3D6168B7244DD91300A6D740 /* Wireframe */,
 			);
 			path = Curso;
 			sourceTree = "<group>";
@@ -205,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				3DEBB1ED2449DFE2007FDD0F /* AuthRepository.swift */,
+				3D42621B24531B4200015D57 /* AccountsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -213,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				3DEBB1F02449E26E007FDD0F /* User.swift */,
+				3D42621724531A2E00015D57 /* Account.swift */,
+				3D42621924531A9300015D57 /* Currency.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,8 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D42620F24530E2200015D57 /* SelectorViewController.storyboard in Resources */,
 				3DA3666E2444910A008BB499 /* LaunchScreen.storyboard in Resources */,
 				3DA00E0D24473A6C002DFE41 /* LoginViewController.storyboard in Resources */,
+				3D426216245311CE00015D57 /* SelectorTableViewCell.xib in Resources */,
 				3D66345E245071D500C2A966 /* NewExpenseViewController.storyboard in Resources */,
 				3DA3666B2444910A008BB499 /* Assets.xcassets in Resources */,
 				3DA3666924449108008BB499 /* Main.storyboard in Resources */,
@@ -344,17 +381,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6168B6244DD7E000A6D740 /* LoginPresenter.swift in Sources */,
+				3D42621824531A2E00015D57 /* Account.swift in Sources */,
 				3DEBB1F12449E26E007FDD0F /* User.swift in Sources */,
+				3D4262142453119100015D57 /* SelectorTableViewCell.swift in Sources */,
 				3DA00E0B24473A40002DFE41 /* LoginViewController.swift in Sources */,
 				3D6168B3244DC77B00A6D740 /* Test.swift in Sources */,
 				3DEBB1DF2449DBB5007FDD0F /* HttpRequestBuilder.swift in Sources */,
 				3DEBB1E52449DC46007FDD0F /* BaseRepository.swift in Sources */,
 				3D6634602450724400C2A966 /* NewExpensePresenter.swift in Sources */,
+				3D42621A24531A9300015D57 /* Currency.swift in Sources */,
 				3DA3666624449108008BB499 /* ViewController.swift in Sources */,
+				3D42621C24531B4200015D57 /* AccountsRepository.swift in Sources */,
 				3D6168B9244DD92300A6D740 /* LoginWireframe.swift in Sources */,
 				3DEBB1E12449DBF8007FDD0F /* HttpManager.swift in Sources */,
+				3D42620D24530DFF00015D57 /* SelectorViewController.swift in Sources */,
 				3DEBB1F32449E3AD007FDD0F /* LoginResponse.swift in Sources */,
 				3D6634622450730D00C2A966 /* ExpensesWireframe.swift in Sources */,
+				3D42621124530E5100015D57 /* SelectorWireframe.swift in Sources */,
 				3DA0473B24506D3F00789614 /* SessionHelper.swift in Sources */,
 				3DA3666224449108008BB499 /* AppDelegate.swift in Sources */,
 				3DEBB1EB2449DF1F007FDD0F /* ApiUrls.swift in Sources */,
@@ -363,6 +406,7 @@
 				3DEBB1E32449DC17007FDD0F /* NetworkRequestManager.swift in Sources */,
 				3DEBB1EE2449DFE2007FDD0F /* AuthRepository.swift in Sources */,
 				3DEBB1E92449DD16007FDD0F /* ApiRequestBuilder.swift in Sources */,
+				3D42621E24531CD600015D57 /* AccountSelectorPresenter.swift in Sources */,
 				3D66345C245071BA00C2A966 /* NewExpenseViewController.swift in Sources */,
 				3DEBB1E72449DC65007FDD0F /* ErrorReponse.swift in Sources */,
 			);

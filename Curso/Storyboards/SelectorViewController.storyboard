@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selector View Controller-->
+        <scene sceneID="ABS-1u-bfh">
+            <objects>
+                <viewController storyboardIdentifier="SelectorViewController" id="ILL-UF-RNj" customClass="SelectorViewController" customModule="Curso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSf-Up-f70">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZRP-6a-RpA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRP-6a-RpA" firstAttribute="top" secondItem="j8P-Lc-9Of" secondAttribute="top" id="6S4-PO-fev"/>
+                            <constraint firstItem="j8P-Lc-9Of" firstAttribute="trailing" secondItem="ZRP-6a-RpA" secondAttribute="trailing" id="UXe-xg-UGG"/>
+                            <constraint firstItem="j8P-Lc-9Of" firstAttribute="bottom" secondItem="ZRP-6a-RpA" secondAttribute="bottom" id="YCV-Si-hUI"/>
+                            <constraint firstItem="ZRP-6a-RpA" firstAttribute="leading" secondItem="j8P-Lc-9Of" secondAttribute="leading" id="eMi-Nn-jBg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j8P-Lc-9Of"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZRP-6a-RpA" id="Awa-zE-0cV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPG-Et-hRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>

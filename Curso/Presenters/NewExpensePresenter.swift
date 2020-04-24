@@ -9,7 +9,9 @@
 import Foundation
 
 protocol NewExpenseViewProtocol: class {
-    
+    func navigateToAccountSelector()
+    func navigateToCategorySelector()
+    func navigateToProviderSelector()
 }
 
 class NewExpensePresenter {
@@ -23,4 +25,19 @@ class NewExpensePresenter {
 
 extension NewExpensePresenter: NewExpensePresenterProtocol {
     
+    func accountTapped() {
+        view?.navigateToAccountSelector()
+    }
+    
+    func categoryTapped() {
+        view?.navigateToCategorySelector()
+    }
+    
+    func providerTapped() {
+        view?.navigateToProviderSelector()
+    }
+    
+    func createTapped() {
+        
+    }
 }

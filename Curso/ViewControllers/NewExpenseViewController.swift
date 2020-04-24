@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 protocol NewExpensePresenterProtocol: class {
-    
+    func accountTapped()
+    func categoryTapped()
+    func providerTapped()
+    func createTapped()
 }
 
 class NewExpenseViewController: UIViewController {
@@ -75,22 +78,33 @@ class NewExpenseViewController: UIViewController {
     }
     
     @objc private func accountSelectorTapped() {
-        print("accountSelectorTapped")
+        presenter?.accountTapped()
     }
     
     @objc private func categorySelectorTapped() {
-        print("categorySelectorTapped")
+        presenter?.categoryTapped()
     }
     
     @objc private func providerSelectorTapped() {
-        print("providerSelectorTapped")
+        presenter?.providerTapped()
     }
     
     @IBAction private func createButtonTapped() {
-        print("createButtonTapped")
+        presenter?.createTapped()
     }
 }
 
 extension NewExpenseViewController: NewExpenseViewProtocol {
     
+    func navigateToAccountSelector() {
+        SelectorWireframe.navigateToAccountSelector(from: self)
+    }
+    
+    func navigateToCategorySelector() {
+        SelectorWireframe.navigateToCategorySelector(from: self)
+    }
+    
+    func navigateToProviderSelector() {
+        SelectorWireframe.navigateToProviderSelector(from: self)
+    }
 }
