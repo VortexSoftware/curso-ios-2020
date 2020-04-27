@@ -13,7 +13,7 @@ protocol NewExpensePresenterProtocol: class {
     func accountTapped()
     func categoryTapped()
     func providerTapped()
-    func createTapped()
+    func createTapped(amount: Double, descripcion: String, quantity: Int)
 }
 
 class NewExpenseViewController: UIViewController {
@@ -90,21 +90,38 @@ class NewExpenseViewController: UIViewController {
     }
     
     @IBAction private func createButtonTapped() {
-        presenter?.createTapped()
+        let amount: Double = Double(amountTextField?.text ?? "") ?? 0
+        let description: String = descriptionTextField?.text ?? ""
+        let quantity: Int = Int(quantityTextField?.text ?? "") ?? 0
+
+        presenter?.createTapped(amount: amount, descripcion: description, quantity: quantity)
     }
 }
 
 extension NewExpenseViewController: NewExpenseViewProtocol {
     
-    func navigateToAccountSelector() {
-        SelectorWireframe.navigateToAccountSelector(from: self)
+    func navigateToAccountSelector(delegate: AccounteSelectorDelegate) {
+        SelectorWireframe.navigateToAccountSelector(from: self, delegate: delegate)
     }
     
-    func navigateToCategorySelector() {
-        SelectorWireframe.navigateToCategorySelector(from: self)
+    func navigateToCategorySelector(delegate: CategorySelectorDelegate) {
+        SelectorWireframe.navigateToCategorySelector(from: self, delegate: delegate)
     }
     
-    func navigateToProviderSelector() {
-        SelectorWireframe.navigateToProviderSelector(from: self)
+    func navigateToProviderSelector(categoryId: Int, delegate: ProviderSelectorDelegate) {
+        SelectorWireframe.navigateToProviderSelector(from: self, categoryId: categoryId, delegate: delegate)
+    }
+    
+    func showSelected(account: Account) {
+        accountLabel?.text = "Account: \(account.name ?? "")"
+        currencyLabel?.text = account.currency?.symbol
+    }
+    
+    func showSelected(category: Category) {
+        categoryLabel?.text = "Category: \(category.name ?? "")"
+    }
+    
+    func showSelected(provider: Provider) {
+        providerLabel?.text = "Provider: \(provider.name ?? "")"
     }
 }
