@@ -38,6 +38,8 @@ class NewExpenseViewController: UIViewController {
     }
     
     private func setupUI() {
+        navigationItem.title = "Nuevo Gasto"
+        
         accountContainer?.layer.borderWidth = 1
         accountContainer?.layer.borderColor = UIColor.lightGray.cgColor
         accountContainer?.layer.cornerRadius = 8
@@ -123,5 +125,17 @@ extension NewExpenseViewController: NewExpenseViewProtocol {
     
     func showSelected(provider: Provider) {
         providerLabel?.text = "Provider: \(provider.name ?? "")"
+    }
+    
+    func showSuccess(message: String?) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showError(message: String?) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }

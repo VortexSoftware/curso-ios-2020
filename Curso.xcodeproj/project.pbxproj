@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3214712459A5BC00E2C52E /* NewExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3214702459A5BC00E2C52E /* NewExpense.swift */; };
+		3D3214732459A6C900E2C52E /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3214722459A6C900E2C52E /* MessageResponse.swift */; };
+		3D3214752459A89700E2C52E /* ExpensesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3214742459A89700E2C52E /* ExpensesRepository.swift */; };
 		3D42620D24530DFF00015D57 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42620C24530DFF00015D57 /* SelectorViewController.swift */; };
 		3D42620F24530E2200015D57 /* SelectorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42620E24530E2200015D57 /* SelectorViewController.storyboard */; };
 		3D42621124530E5100015D57 /* SelectorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42621024530E5100015D57 /* SelectorWireframe.swift */; };
@@ -54,6 +57,9 @@
 
 /* Begin PBXFileReference section */
 		1C177602536B6BD1F9FE868E /* Pods-Curso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curso.debug.xcconfig"; path = "Target Support Files/Pods-Curso/Pods-Curso.debug.xcconfig"; sourceTree = "<group>"; };
+		3D3214702459A5BC00E2C52E /* NewExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpense.swift; sourceTree = "<group>"; };
+		3D3214722459A6C900E2C52E /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		3D3214742459A89700E2C52E /* ExpensesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesRepository.swift; sourceTree = "<group>"; };
 		3D42620C24530DFF00015D57 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		3D42620E24530E2200015D57 /* SelectorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectorViewController.storyboard; sourceTree = "<group>"; };
 		3D42621024530E5100015D57 /* SelectorWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorWireframe.swift; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 				3DEBB1E82449DD16007FDD0F /* ApiRequestBuilder.swift */,
 				3DEBB1EA2449DF1F007FDD0F /* ApiUrls.swift */,
 				3DEBB1F22449E3AD007FDD0F /* LoginResponse.swift */,
+				3D3214722459A6C900E2C52E /* MessageResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 				3D42621B24531B4200015D57 /* AccountsRepository.swift */,
 				3DC1AB95245375FA005A3FDC /* ProvidersRepository.swift */,
 				3DC1AB9724537608005A3FDC /* CategoriesRepository.swift */,
+				3D3214742459A89700E2C52E /* ExpensesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -266,6 +274,7 @@
 				3D42621924531A9300015D57 /* Currency.swift */,
 				3DC1AB9924537659005A3FDC /* Category.swift */,
 				3DC1AB9B24537667005A3FDC /* Provider.swift */,
+				3D3214702459A5BC00E2C52E /* NewExpense.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -410,6 +419,7 @@
 				3DEBB1E52449DC46007FDD0F /* BaseRepository.swift in Sources */,
 				3D6634602450724400C2A966 /* NewExpensePresenter.swift in Sources */,
 				3DC1AB9E245376E2005A3FDC /* CategorySelectorPresenter.swift in Sources */,
+				3D3214752459A89700E2C52E /* ExpensesRepository.swift in Sources */,
 				3DC1AB9824537609005A3FDC /* CategoriesRepository.swift in Sources */,
 				3D42621A24531A9300015D57 /* Currency.swift in Sources */,
 				3DC1ABA0245376EC005A3FDC /* ProviderSelectorPresenter.swift in Sources */,
@@ -419,6 +429,7 @@
 				3DEBB1E12449DBF8007FDD0F /* HttpManager.swift in Sources */,
 				3D42620D24530DFF00015D57 /* SelectorViewController.swift in Sources */,
 				3DEBB1F32449E3AD007FDD0F /* LoginResponse.swift in Sources */,
+				3D3214712459A5BC00E2C52E /* NewExpense.swift in Sources */,
 				3D6634622450730D00C2A966 /* ExpensesWireframe.swift in Sources */,
 				3D42621124530E5100015D57 /* SelectorWireframe.swift in Sources */,
 				3DC1AB96245375FA005A3FDC /* ProvidersRepository.swift in Sources */,
@@ -429,6 +440,7 @@
 				3DA0473D24506FBE00789614 /* MainWireframe.swift in Sources */,
 				3DEBB1E32449DC17007FDD0F /* NetworkRequestManager.swift in Sources */,
 				3DEBB1EE2449DFE2007FDD0F /* AuthRepository.swift in Sources */,
+				3D3214732459A6C900E2C52E /* MessageResponse.swift in Sources */,
 				3DEBB1E92449DD16007FDD0F /* ApiRequestBuilder.swift in Sources */,
 				3D42621E24531CD600015D57 /* AccountSelectorPresenter.swift in Sources */,
 				3D66345C245071BA00C2A966 /* NewExpenseViewController.swift in Sources */,

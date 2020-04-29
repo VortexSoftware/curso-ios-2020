@@ -37,4 +37,8 @@ class ApiRequestBuilder: HttpRequestBuilder {
         ]
         return buildRequest(path: ApiUrls.providers, method: .get, params: params)
     }
+    
+    func createExpense(data: NewExpense) -> DataRequest {
+        return buildRequest(path: ApiUrls.transactions, method: .post, params: data)
+    }
 }
